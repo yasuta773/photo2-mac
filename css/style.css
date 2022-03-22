@@ -1,1 +1,55 @@
 @charset "UTF-8";
+
+/*共通ここから*/
+.container{
+    margin: 0 auto;
+    max-width: 800px;
+}
+/*共通ここまで*/
+
+/*headerここから*/
+header .container{
+    max-width: 1000px;
+}
+/*headerここまで*/
+
+/*mainvisual-wrapperここから*/
+.mainvisual-wrapper .container{
+    max-width: 1000px;
+    height: 400px;
+    background-image: url(../images/mainvisual.png);
+}
+/*mainvisual-wrapperここまで*/
+
+/*index-wrapperここから*/
+.index-wrapper .container{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 60px;
+    background-color: #F5F5F5;
+}
+.index{
+    padding-bottom: 30px;
+}
+.index h2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+.title{
+    
+}
+ol{
+    list-style-position: inside;
+}
+/*index-wrapperここまで*/
+
+/*images-wrapperここから*/
+/*images-wrapperここまで*/
+
+/*detail-wrapperここから*/
+/*detail-wrapperここまで*/
+
+/*footerここから*/
+/*footerここまで*/
