@@ -4,6 +4,7 @@
 .container{
     margin: 0 auto;
     max-width: 800px;
+    width: 100%;
 }
 /*共通ここまで*/
 
@@ -38,14 +39,22 @@ header .container{
     color: #333333;
 }
 .title{
-    
+    border: 1px solid #333333;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 ol{
     list-style-position: inside;
 }
+li{
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
 /*index-wrapperここまで*/
 
 /*images-wrapperここから*/
+
 /*images-wrapperここまで*/
 
 /*detail-wrapperここから*/
