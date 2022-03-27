@@ -8,12 +8,18 @@
     text-align: center;
 }
 .title{
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 .title h2{
     font-size: 18px;
     font-weight: bold;
     color: #333333;
+}
+
+@media screen and (max-width 750px) {
+.container{
+    width: calc(100% - 40px);
+}
 }
 /*共通ここまで*/
 
@@ -21,6 +27,7 @@
 header .container{
     max-width: 1000px;
     text-align: initial;
+    padding-top: 43px;
 }
 /*headerここまで*/
 
@@ -29,6 +36,7 @@ header .container{
     max-width: 1000px;
     height: 400px;
     background-image: url(../images/mainvisual.png);
+    background-size: contain;
 }
 /*mainvisual-wrapperここまで*/
 
@@ -50,7 +58,7 @@ ol{
 li{
     font-size: 14px;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 /*index-wrapperここまで*/
 
@@ -61,6 +69,9 @@ li{
     justify-content: space-between;
     height: 542px;
     align-content: space-between;
+}
+.image-container img{
+    max-width: 100%;
 }
 /*images-wrapperここまで*/
 
@@ -77,11 +88,30 @@ li{
     justify-content: flex-start;
     font-size: 14px;
 }
-.infomation-contents{
-    margin-bottom: 10px;
+.information{
+    width: 280px;
+    border-right: solid 1px #333333;
+}
+.information-contents{
+    color: #333333;
+}
+.text{
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #333333;
+    padding-left: 40px;
+}
+.text-contents a{
     color: #333333;
 }
 /*detail-wrapperここまで*/
 
 /*footerここから*/
+footer p{
+    font-size: 10px;
+    color: #333333;
+    padding-top: 15px;
+}
 /*footerここまで*/
