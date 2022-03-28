@@ -4,19 +4,22 @@
 .container{
     margin: 0 auto;
     max-width: 800px;
-    width: 100%;
-    text-align: center;
+    width: calc(100% - 40px);
 }
 .title{
     padding-bottom: 25px;
+    text-align: center;
 }
 .title h2{
     font-size: 18px;
     font-weight: bold;
     color: #333333;
 }
-
-@media screen and (max-width 750px) {
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+@media screen and (max-width: 750px) {
 .container{
     width: calc(100% - 40px);
 }
@@ -26,8 +29,11 @@
 /*headerここから*/
 header .container{
     max-width: 1000px;
-    text-align: initial;
-    padding-top: 43px;
+    padding-top: 60px;
+}
+header h1{
+    line-height: 0;
+    margin-bottom: 15px;
 }
 /*headerここまで*/
 
@@ -36,14 +42,16 @@ header .container{
     max-width: 1000px;
     height: 400px;
     background-image: url(../images/mainvisual.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 /*mainvisual-wrapperここまで*/
 
 /*index-wrapperここから*/
 .index-wrapper .container{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 58px;
+    margin-bottom: 58px;
     padding: 60px;
     background-color: #F5F5F5;
 }
@@ -54,6 +62,8 @@ header .container{
 }
 ol{
     list-style-position: inside;
+    width: 410px;
+    margin: 0 auto;
 }
 li{
     font-size: 14px;
@@ -67,17 +77,16 @@ li{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 542px;
-    align-content: space-between;
 }
-.image-container img{
-    max-width: 100%;
+.image-container{
+    margin-bottom: 15px;
+    width: calc((100% - 15px) / 2);
 }
 /*images-wrapperここまで*/
 
 /*detail-wrapperここから*/
 .detail-wrapper .container{
-    margin-top: 60px;
+    margin-top: 43px;
     margin-bottom: 60px;
     padding: 60px;
     background-color: #F5F5F5;
@@ -87,31 +96,37 @@ li{
     display: flex;
     justify-content: flex-start;
     font-size: 14px;
+    color: #333333;
 }
 .information{
     width: 280px;
     border-right: solid 1px #333333;
 }
-.information-contents{
-    color: #333333;
+.information dt{
+    font-weight: bold;
+}
+.information dd{
+    line-height: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 .text{
     width: 520px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #333333;
     padding-left: 40px;
 }
-.text-contents a{
+.text p{
+    margin-bottom: 15px;
+}
+.text a{
     color: #333333;
 }
 /*detail-wrapperここまで*/
 
 /*footerここから*/
 footer p{
+    text-align: center;
     font-size: 10px;
     color: #333333;
-    padding-top: 15px;
+    padding-top: 11px;
 }
 /*footerここまで*/
