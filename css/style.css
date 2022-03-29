@@ -21,7 +21,7 @@ img{
 }
 @media screen and (max-width: 750px) {
 .container{
-    width: calc(100% - 40px);
+    
 }
 }
 /*共通ここまで*/
@@ -35,6 +35,12 @@ header h1{
     line-height: 0;
     margin-bottom: 15px;
 }
+@media screen and (max-width: 750px) {
+header .container{
+    margin-left: 10px;
+}
+}
+    
 /*headerここまで*/
 
 /*mainvisual-wrapperここから*/
@@ -45,6 +51,13 @@ header h1{
     background-size: cover;
     background-position: center;
     width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+.mainvisual-wrapper .container{
+    min-height: 150px;
+    height: 100%;
+}
 }
 /*mainvisual-wrapperここまで*/
 
@@ -69,6 +82,15 @@ li{
     font-size: 14px;
     font-weight: normal;
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 750px){
+.index-wrapper .container{
+    padding: 40px 20px;
+}
+ol{
+    width: initial;
+}
 }
 /*index-wrapperここまで*/
 
