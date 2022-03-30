@@ -19,11 +19,6 @@ img{
     max-width: 100%;
     vertical-align: top;
 }
-@media screen and (max-width: 750px) {
-.container{
-    
-}
-}
 /*共通ここまで*/
 
 /*headerここから*/
@@ -75,7 +70,7 @@ header .container{
 }
 ol{
     list-style-position: inside;
-    width: 410px;
+    width: fit-content;
     margin: 0 auto;
 }
 li{
@@ -88,8 +83,15 @@ li{
 .index-wrapper .container{
     padding: 40px 20px;
 }
+.title-list{
+    padding: 26px 40px 12px 15px;
+}
 ol{
-    width: initial;
+    text-indent: -1em;
+}
+li{
+    margin-left: 1em;
+    margin-bottom: 19px;
 }
 }
 /*index-wrapperここまで*/
@@ -103,6 +105,15 @@ ol{
 .image-container{
     margin-bottom: 15px;
     width: calc((100% - 15px) / 2);
+}
+
+@media screen and (max-width: 750px){
+.images-wrapper .container{
+    display: block;
+}
+.image-container{
+    width: 100%;
+}
 }
 /*images-wrapperここまで*/
 
