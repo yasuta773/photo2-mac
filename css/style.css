@@ -51,7 +51,7 @@ header .container{
 @media screen and (max-width: 750px) {
 .mainvisual-wrapper .container{
     min-height: 150px;
-    height: 100%;
+    height: calc(150 / 375 * 100vw);
 }
 }
 /*mainvisual-wrapperここまで*/
@@ -108,11 +108,9 @@ li{
 }
 
 @media screen and (max-width: 750px){
-.images-wrapper .container{
-    display: block;
-}
 .image-container{
     width: 100%;
+    text-align: center;
 }
 }
 /*images-wrapperここまで*/
@@ -125,7 +123,6 @@ li{
     background-color: #F5F5F5;
 }
 .detail-contents{
-    text-align: initial;
     display: flex;
     justify-content: flex-start;
     font-size: 14px;
@@ -137,10 +134,10 @@ li{
 }
 .information dt{
     font-weight: bold;
+    line-height: calc(18 / 14);
 }
 .information dd{
-    line-height: 0;
-    margin-top: 5px;
+    line-height: calc(16 / 14);
     margin-bottom: 10px;
 }
 .text{
@@ -152,6 +149,30 @@ li{
 }
 .text a{
     color: #333333;
+}
+
+@media screen and (max-width: 750px){
+.detail-wrapper .container{
+    padding: 40px 20px;
+}
+.detail-contents{
+    display: block;
+}
+.information{
+    width: 100%;
+    border-right: none;
+    border-bottom: solid 1px #333333;
+    padding-bottom: 30px;
+}
+.information dd{
+    margin-bottom: 5px;
+}
+.text{
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 0;
+}
+
 }
 /*detail-wrapperここまで*/
 
